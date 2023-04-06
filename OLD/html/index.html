@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="da">
+<head>
+	<meta charset="utf-8" />
+	<title>Snapse Atlas</title>
+	<link rel="stylesheet" type="text/css" href="Snapseatlas_html_screen.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="Snapseatlas_html_print.css" media="print" />
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+	<a id="Top"></a>
+	<header><!-- header -->
+		<h1><a href="https://snapseatlas.dk/">Snapse Atlas</a></h1>
+		<a href="https://snapseatlas.dk/"><img src="../images/head_940x200.png" width="940" height="200" alt=""></a><!-- header image -->
+	</header><!-- end of header -->
+
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><a href="https://snapseatlas.dk/html/index.html">Home</a></li>
+				<li><a href="#">About</a>
+			    <ul>
+   					<li><a href="#holdet">Holdet bag</a></li>
+   					<li><a href="#historien">Historien</a></li>
+   					<li><a href="#visionen">Visionen</a></li>
+   				</ul>
+				<li><a href="#kontakt">Kontakt os</a></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->
+
+
+	<section id="main"><!-- #main content and sidebar area -->
+		<section id="container"><!-- #container -->
+			<section id="content"><!-- #content -->
+
+				<article><a id="art20230402"></a>
+					<h2>Version 0.9.0 - Nyt webhotel</h2>
+					<p>(2023-04-02)</p>
+					<p>Så er vi flyttet til nyt webhotel</p>
+					<p>Som nogen har bemærket, og måske endda været generet af, så besluttede vores gamle ISP (internet service provider) at reducerer antallet af tilladte PHP-tråde fra 20 til 10, oven i købet ganske uden varsel.</p>
+					<p>Da de forskellige plantekategorier på kortet kører parallelt i hver sin PHP-tråd, så har vi desværre været væsentligt handikappet af det.</p>
+					<p>Desværre var de fuldstændigt imum overfor vores argument om at de havde brudt aftalen og derfor burde hjælpe med at finde en løsning - Derfor er vi nu flyttet til en anden ISP, og alting ser ud til at virke, igen.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20200711"></a>
+					<h2>Version 0.8.0 - Nu med https://</h2>
+					<p>(2020-07-11)</p>
+					<p>Så har vi fået httpS</p>
+					<p>Det har længe været et ønske at få Snapseatlas.dk SSL certificeret. Det var meget bøvlet med vore gemle internetudbyder, men nu har vi fået et certifikat.</p>
+					<p>Du vil ikke opleve den store forskel som bruger, men adressefeltet i din webbrowser skulle gerne have fået en grøn hængelås, eller tilsvarende, som tegn på at al trafik mellem dig og snapseatlas.dk nu er krypteret.</p>
+					<p>Hvis du mod forventning ikke oplever denne ændring, så husk at opdatere dine bookmarks, og ellers tilføj det ny S i adressefeltet manuelt, så cachen i din webbrowser kan blive opdateret. Alle sider på Snapseatlas.dk kører https:// </p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20200128"></a>
+					<h2>Version 0.7.0 - Bugfix efter PHP opgradering</h2>
+					<p>(2020-01-28)</p>
+					<p>Så er vi oppe at køre igen ...</p>
+					<p>Det var en ændring i den nyeste version af PHP (ver. 7.2.27) som spændte ben for det modul det henter plantepunkterne i SQL databasen. Det er fixet, og vi er tilbage på sporet. Det betyder også at problemet med hastigheden består - det vil sige at der stadigt skal laves noget om i bagbutikken før vi væsentligt kan øge mængden af punkter på kortet. Jeg håber det bliver noget med <a href="https://github.com/Leaflet/Leaflet.markercluster">Marker Clusters</a></p>
+					<p>I skal dog ikke holde jer tilbage med at melde data ind via kortet, den kan sagtens klare de næste 10.000 også, så kom frisk!</p>
+					<p>Kontaktoplysninger findes i footeren, her på siden, hvis man vil være med til at lave den næste version.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20200126"></a>
+					<h2>Komplet nedbrud :-(</h2>
+					<p>(2020-01-26)</p>
+					<p>Snapseatlas.dk har haft sit andet nedbrud - og denne gang er det totalt. Vi ved ikke hvad det skyldes endnu, men mistanken er på at vore web host firma har opgraderet PHP, og på en eller anden måde er Snapseatlas ikke kompatibelt med det.</p>
+					<p>Vi arbejder på sagen, men de første 24 timer, med opgradering af alle de andre pakker, har ikke ledt til nogen quick-fix. Lige nu overvejer vi at benytte lejligheden til at indføre mere omfattende ændringer. Snapseatlas har været tynget på hastighed af de ca. 30.000 punkter i databasen, og vi har ca. 200.000 ny punkter på vej, så der skulle aligevel ændringer til.</p>
+					<p>Frivillige, især Leaflet, JS, PHP, m.v. programører er meget velkomne til at melde sig. Kontaktoplysninger findes i footeren, her på siden.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20180513"></a>
+					<h2>Version 0.6.0 - En væsentlig opgradering</h2>
+					<p>(2018-05-13)</p>
+					<p>Snapseatlas.dk har haft sit første nedbrud i årevis. Nogle brugere fik en "Cross-Origin Resource Sharing" fejl, og kunne ikke se planterne på kortet. Det skyldes formentlig at web-serveren og database-serveren står i hver deres domæne. Det tog lidt tid at finde ud af, da nogle browsere kunne kompencerer for problemet. Efter en opgradering af noget af det underliggende software - noget vi har forsømt længe - kører vi nu Leaflet 1.3.1 og jQuery 3.3.1 og nyeste verion af Leaflet.contextmenu (fra marts 2017). Det ser ud til at det har løst problemerne med "Cross-Origin Resource Sharing", men I må endeligt raporterer hvis I oplever noget.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20160516"></a>
+					<h2>Version 0.5.1 - Nu med auto-complete</h2>
+					<p>(2016-05-16)</p>
+					<p><a href="https://snapseatlas.dk/php090/NewOccurrenceForm.php?lat=55.00&lon=13.00"><img src="../images/AutoCompl.png" alt="Auto complete" class="alignleft" /></a>
+					<p>Snapseatlas.dk har fået auto-complete, som gætter hvilket plantenavn du gerne vil skrive.<br>Det findes i formularen til indtastning af nye planter. Du behøver altså ikke længere at kunne huske den præcise stavemåde af plantenavnene, du skriver bare nogle få bogstaver og så får du en short-list af de navne i databasen som passer til det tastede. Det er en stor hjælp ved indtastningen, og det hjælper til at minimerer indtastningsfejl i databasen. Det er især en stor hjælp hvis man vil indtaste det latinske navn.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20160325"></a>
+					<h2>Version 0.5.0 - Nu med højre-klik</h2>
+					<p>(2016-03-25)</p>
+					<p><a href="https://snapseatlas.dk/"><img src="../images/ContextMenu.png" alt="Context Menu" class="alignleft" /></a>
+					<p>Snapseatlas.dk har fået højreklik, som åbner en lille 'context menu'.<br>Den primære funktion er at gøre indtastning af ny planter meget lettere. Nu kan du bare zomme ind til det voksested du kender, højreklikke på stedet, og så åbner indtastningssiden - og de klikkede koordinater er allerede udfyldt i Nord og Øst felterne. Du skal bare skrive hvad det er for en plante, og evt. andre oplysninger.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20150905"></a>
+					<h2>Bedre pop-up</h2>
+					<p>(2015-09-05)</p>
+					<p><a href="https://snapseatlas.dk/"><img src="../images/BedrePopup.png" alt="Bedre popup" class="alignleft" /></a>
+					<p>Nu viser pop-up'en lidt mere af den information som ligger i data basen. Tidligere blev kun vist plantenavn, nu kan man også se naturtypen og lokalitetsnavn for det sted den vokser, og man kan se hvornår og af hvem den er observeret. Hvis der er en note tilknyttet bliver den også vist, men det er de færreste fund som har noter tilknyttet. Hvis der ikke vises kilde (hvor informationen stammer fra) så kommer den fra <a href="http://www.gbif.org/">GBIF</a> (Global Biodiversity Information Facility)</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20150725a"></a>
+					<h2>Hvordan finder jeg koordinater til at indberette?</h2>
+					<p>(2015-07-25, opdateret 2016-03-25)</p>
+					<p><a href="https://snapseatlas.dk/"><img src="../images/ContextMenu.png" alt="Context Menu" class="alignleft" /></a>
+					<p>Med det ny højreklik kan du åbne en context-menu, som giver adgang til bl.a. 'Vis koordinater'</p>
+					<p old>Hvis du gerne vil indberette dine egne findesteder, så skal du oplyse koordinater. Hvis din telefon ikke kan den slags, og du ikke lige har en GPS så findes der en <a href="https://snapseatlas.dk">speciel version af Snapseatlas kortet</a>, som viser koordinaterne på alle steder du klikker.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20150724a"></a>
+					<h2>Kan jeg få alle data i databasen udleveret?</h2>
+					<p>(2015-07-24)</p>
+					<p>Selvfølgeligt kan du det!<br>Nogle vil gerne lege videre med data i deres egen software, og det må de selvfølgeligt gerne. Nogen vil kunne regne det ud selv, ved at kikke i koden bag webkortet, men det er faktisk ikke nogen hemmelighed. Man kan downloade hele databasen, som et +30.000 liniers tekstdokument i JSON format ved at <a href="https://snapseatlas.dk/php090/data.php?bbox=0.0,0.0,180.0,90.0">klikke her</a></p>
+					<p>Hvis du vil vide hvilke arter der finde i databasen, og hvor mange der er af hver, så kan du gå ind her <a href="https://snapseatlas.dk/php090/SpeciesCount.php">Species Count</a>. De er opgjort per latinsk navn, og sorteret efter antal forekomster.</p>
+					<p>Endeligt er det muligt at kombinerer de to, men det kræver du selv taster URL'en i hånden. Man finder et latinsk navn i <a href="https://snapseatlas.dk/php090/SpeciesCount.php">Species Count</a>, og så kan man udtrække alle forekomster af denne art, <a href="https://snapseatlas.dk/php090/data.php?bbox=0.0,0.0,180.0,90.0&species=Malus">fx alle Æbler</a> (kik nøje på url'en).. Det er enda muligt at kombinerer er arts afgrænsning med en geografisk afgrænsning til en box, <a href="https://snapseatlas.dk/php090/data.php?bbox=12.1,54.9,12.6,55.0&species=Hypericum">fx Perikon på Møn (sådan ca.)</a>.</p>
+					<p>Inter er skjult, alt er åbent tilgængeligt, så det er bare at gå i gang. Eneste betingelse er at hvis du bringer noget af det videre, så skal du citere Snapseatlas.dk - det syntes vi er okay...</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art20150721a"></a>
+					<h2>Nu virker det også på små skærme</h2>
+					<p>Version 0.4.0 (2015-07-21)</p>
+					<p>Så er problemet fixet. Nu virker kortet også på computere med små skærme, på iPads og på mobiltelefoner. Den tidligere version var altid 1300x600 pixels, og derfor kunne man ikke se menuen i øverste højre hjørne, hvis man havde en smallere skærm.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art001"></a>
+					<h2>Hvordan virker kortet?</h2>
+					<a href="https://snapseatlas.dk/"><img src="../images/MapMenu.png" alt="Kort menu" class="alignleft" /></a><p>Kortet er et ganske simpelt interaktivt webkort. De virtuelle 'knappenåle' viser hvor planter vokser.</p>
+					<p>Du kan trække kortet rundt med musen. Hvis du dobbeltklikker i kortet ,zoomer det ind. Du kan også zoome med (+) og (-) knapperne i kortets øverste venstre hjørne, og ved at rulle med musens hjul. Hvis du klikker på en knappenål kommer en popup med ekstra information om planten, eller findestedet.</p>
+					<p>I øverste højre hjørne findes en kort menu (Blomster-knappen) som giver adgang til at vælge andet baggrundskort, samt til at tænde og slukke for de forskellige planter. Kortet er koblet direkte til en database over planter, det har den fordel at det altid er opdateret ift. databasens indhold, men det har også en ulempe. Hvis du tænder for mange planter, og zoomer ud, så skal der hentes mange planter i databasen for hver gang skærmen skal opdateres, derfor kan der komme forsinkelse på skærmtegningen på flere sekunder. Hvis det sker, så vælg færre planter ad gangen og/eller zoom lidt tættere på...</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art002"></a>
+					<h2>Hvilke planter er med?</h2>
+					<p>For øjeblikket findes knapt 20 forskellige planter registeret på kortet. De er udvalgt fordi de er interessante ift. kryddersnaps. Der kommer måske flere forskellige planter senere, men det vides ikke lige hvornår, projektet køre rent på frivilligt arbejde. Der kommer ikke planter i databasen som ikke er relevante for kryddersnaps.</p>
+					<p>Du kan se en aktuel oversigt over <a href="https://snapseatlas.dk/php090/SpeciesCount.php">databasens indhold af planter her</a>, men bemærk at få arter ikke vises på kortet (fx æbler).</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art003"></a>
+					<h2>Hvor kommer informationene fra?</h2>
+					<p>Informationen om planternes voksesteder kommer i alt væsentlighed fra <a href="http://www.gbif.org/">GBIF</a> (Global Biodiversity Information Facility) og er samlet ind af videnskabsfolk, til brug i forskning i biodiversitet og hvordan denne udvikler sig, bl.a. som følge af klimaforandringer. Data er frie og kan frit bruges. De er super veldokumenterede og kan dermed formodes de at være ret pålidelige.</p>
+					<p>Der findes også informationer fra andre kilder i databasen, dels mine egne findesteder, dels findesteder som jeg har fået fortalt af venner inden for kryddersnapse brygning. Alle findesteder i databasen er markeret med hvem som har indberettet fundet, så der opretholdes sporbarhed på informationerne. Der er pt. +30.000 planter i databasen.</p>
+					<p>Baggrundskortene kommer fra forskellige frie kortservere, bl.a. OSM (Open Street Maps). Læs evt. mere om dette under <a href="#Bot">'Credits'</a>.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="art005"></a>
+					<h2>Hvilket software har i brugt til at lave det?</h2>
+					<p>Vi har næsten kun brugt FOSS (Free Open Source Software). Der er enkelte gange blevet brugt en windows computer, og da windows operativsystem ikke er FOSS, kan vi ikke 100% sige at vi ikke har brugt komersielt software, men næsten.</p>
+					<p>Konkret har jeg kendskab til at vi har brugt nedenstående software, men listen er nok ikke komplet.
+					<ul>
+					<li><a href="https://www.linux.com/">Linux</a> - Jeg bruger Linux computere. Serveren hvor vi hoster kører også Linux</li>
+					<li><a href="http://www.apache.org/">Apache</a> - webserveren køre Apache</li>
+					<li><a href="https://www.mysql.com/">MySQL</a> - databasen er en mysql database</li>
+					<li><a href="https://www.phpmyadmin.net/">phpMyAdmin</a> - til at administrere databasen</li>
+					<li><a href="http://leafletjs.com/">Leaflet</a> - Til at opbygge det interaktive webkort</li>
+					<li><a href="https://jquery.com/">jQuery</a> - Til at få det hele til at glide lidt lettere ...</li>
+					<li><a href="https://eclipse.org/">Eclipse</a> - Til at skrive programmer i JavaScript, php, Python, og til html.</li>
+					<li><a href="https://filezilla-project.org/">Filezilla</a> - til at oploade via FTP</li>
+					<li><a href="https://atom.io">Atom</a> - Den seneste yndlings editor til html m.v.</li>
+					<li><a href="https://wiki.gnome.org/Apps/Gedit#gedit">GEdit</a> og <a href="http://www.scintilla.org/SciTE.html">SciTE</a> - til mindre text redigering og anden text manipulation</li>
+					<li><a href="https://www.mozilla.org/en-US/firefox/products/">Firefox</a> - til at test kortet, og websiden</li>
+					<li><a href="https://www.torproject.org/projects/torbrowser.html.en">Tor</a> - til at test kortet, og websiden</li>
+					<li><a href="https://github.com/">GitHub</a> - til at dele koden (det er måske ikke rigtigt software, men alligevel...)</li>
+					</ul>
+					Desuden har vi benyttet forskellige programmeringssprog, som også alle er Free: Html, JavaScript, PHP, SQL og Python.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="holdet"></a>
+					<h2>Holdet bag - The Team</h2>
+					<p>Indtil videre består holdet primært af mig selv, Martin Hvidberg. Men jeg har fået god hjælp af mange venner og bekendte. Snapseatlas.dk var fx ikke nået ret langt uden Morten Fuglsang.</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="historien"></a>
+					<h2>Historien om Snapse Atlas</h2>
+					<p>Den er over 10 år lang, og kommer senere ...</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="visionen"></a>
+					<h2>Visionen om Snapse Atlas</h2>
+					<p>Noget om at gøre det nemt for alle at finde planter til kryddernsaps, og dermed udbrede kendskabet til denne danske tradition ...</p>
+					<a href="#top">top</a>
+				</article>
+
+				<article><a id="websiden"></a>
+					<h2>Websiden</h2>
+					<p>Selve det interaktive kort findes på <a href="https://snapseatlas.dk/">Snapseatlas.dk/</a></p>
+					<a href="#top">top</a>
+				</article>
+
+			</section><!-- end of #content -->
+		</section><!-- end of #container -->
+
+		<aside id="sidebar"><!-- sidebar -->
+
+				<h3>Bruger login</h3>
+					<ul>
+						<li><a href="../php090/NewUserForm.php">Opret ny bruger <img src="../images/play.png" alt="NEW" style="width:32px;height:32px;"></a></li>
+						<li><a href="../php090/NewOccurrenceForm.php">Indtast et findested <img src="../images/play.png" alt="NEW" style="width:32px;height:32px;"></a></li>
+					</ul>
+
+				<h3>Hjælp</h3>
+					<ul>
+						<li><a href="HowTo_NewUser.html">Hvordan: Opret ny bruger <img src="../images/question-face-png-laurie-hernandez-human-emoji-transparent.png" alt="NEW" style="width:32px;height:32px;"></a></li>
+						<li><a href="HowTo_IndtastFindested.html">Hvordan: Indtast et findested <img src="../images/question-face-png-laurie-hernandez-human-emoji-transparent.png" alt="NEW" style="width:32px;height:32px;"></a></li>
+					</ul>
+
+				<h3>Stuff</h3>
+					<ul>
+						<li><a href="https://snapseatlas.dk/">Kortet</a></li>
+						<li><a href="#art001">Hvordan virker kortet?</a></li>
+						<li><a href="#art002">Hvilke planter er med?</a></li>
+						<li><a href="#art003">Hvor kommer informationene fra?</a></li>
+						<li><a href="#art005">Hvilket software har i brugt til at lave det?</a></li>
+					</ul>
+
+				<h3>More Stuff</h3>
+					<ul>
+						<li><a href="#links_kryddersnaps">Kryddersnaps links</a></li>
+						<li><a href="#kontakt">Kontakt os</a></li>
+						<li><a href="#credits">Credits</a></li>
+						<li><a href="#Bot">Copyright?</a></li>
+					</ul>
+
+		</aside><!-- end of sidebar -->
+
+	</section><!-- end of #main content and sidebar-->
+
+	<footer>
+		<section id="footer-area">
+			<a id="Bot"></a>
+			<section id="footer-outer-block">
+					<aside id="first" class="footer-segment">
+							<h3>Kryddersnaps links</h3><a id="links_kryddersnaps"></a>
+								<ul>
+									<li><a href="http://www.denstoredanske.dk/Mad_og_bolig/%C3%98l,_vin_og_spiritus/Spiritus/Spiritustyper/Kryddersnaps">Den Store Danske</a></li>
+									<li><a href="http://naturguide.dk/kryddersnaps-natur-pa-flaske/">Naturguide.dk</a></li>
+									<li><a href="http://www.danmarksflora.dk/0101.php">Danmarks Flora</a></li>
+									<li><a href="https://bibliotek.dk/da/search/work?search_block_form=kryddersnaps&select_material_type=bibdk_frontpage&op=S%C3%B8g&year_op=%2522year_eq%2522&year_value=&form_build_id=form-rcQCSkoazBABkbDiiyWKketQLlu5Vld7NxWK68ZjdlQ&form_id=search_block_form&sort=rank_frequency&page_id=bibdk_frontpage&facets[]=facet.type%3Abog&facets[]=facet.language%3Adansk#content">Biblioteket</a></li>
+									<li><a href="https://www.facebook.com/groups/35379928383/?fref=ts">Facebook gruppe</a></li>
+								</ul>
+					</aside><!-- end of #first footer segment -->
+
+					<aside id="second" class="footer-segment">
+							<h3>Credits</h3><a id="credits"></a>
+								<ul>
+									<li><a href="https://www.openstreetmap.org/">OSM - Open Street Maps</a></li>
+									<li><a href="https://www.arcgis.com/home/">ESRI - satellitbilleder</a></li>
+									<li><a href="http://www.gistek.dk/">GISTEK</a></li>
+									<li><a href="http://leafletjs.com/">Leaflet</a></li>
+									<li><a href="http://www.benjaminkeen.com/google-maps-coloured-markers/">Colour markers</a></li>
+								</ul>
+					</aside><!-- end of #second footer segment -->
+
+					<aside id="third" class="footer-segment">
+							<h3>Kontakt</h3><a id="kontakt"></a>
+								 Kontakt os venligst på e-mail.<br>
+								 Alt om bruger-id og login: admin_users@snapseatlas.dk<br>
+								 Alt andet til: martin@snapseatlas.dk
+					</aside><!-- end of #third footer segment -->
+
+					<aside id="fourth" class="footer-segment">
+							<h3>Copyright, and -left</h3>
+								<p>Alt hvad der står på denne webside kan frit og gratis citeres, også til komersielle formål, så længe der blot refereres til snapseatlas.dk.</p>
+					</aside><!-- end of #fourth footer segment -->
+
+			</section><!-- end of footer-outer-block -->
+
+		</section><!-- end of footer-area -->
+	</footer>
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

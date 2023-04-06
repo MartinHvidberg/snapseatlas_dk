@@ -1,0 +1,14 @@
+
+* Ver 0.9.0
+
+We are now moved to a new ISP (NordicWay)
+Things that could be done includes:
+
+- Upgrade Leaflet to newer version, we are at least 0.3 versions behind
+- Upgrade jquery to newer version, we are about 0.2 versions behind
+
+- Leaflet.contextmenu seem quite dead, since late 2017... Consider alternatives, for long term support
+
+- Make a real app for the mobile people :-)
+
+/M

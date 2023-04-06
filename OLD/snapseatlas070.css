@@ -1,0 +1,19 @@
+
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+body { margin: 0px;
+    height: 100%;}
+
+#wrap {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#map {
+    padding: 0px;
+    height: 100%;
+}
