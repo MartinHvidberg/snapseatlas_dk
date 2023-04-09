@@ -1,6 +1,9 @@
 
 <!doctype html>
 <html lang="da">
+
+<!-- ver. 2023-04-09  De-conflicting ene and Almindelig ene -->
+
 <head>
 	<meta charset="utf-8" />
 	<title>Snapse Atlas</title>
@@ -8,6 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="../html/Snapseatlas_html_print.css" media="print" />
 </head>
 <body>
+
+// <?php
+//     $variable = "This is a test: 1, 2, 3";
+//     echo "<script>console.log('$variable');</script>";
+// ?>
+
 <div id="wrapper"><!-- #wrapper -->
 	<a id="Top"></a>
 	<header><!-- header -->
@@ -27,6 +36,8 @@
 		<section id="container"><!-- #container -->
 			<section id="content"><!-- #content -->
 
+			    <h2 style="background-color:Tomato;">  Sorry - This doesn't work at the moment. </h2>
+
 				<datalist id="plantdk">
 					<option value="agermåneslægten">
 					<option value="almindelig agermåne">
@@ -40,7 +51,7 @@
 					<option value="blåbær">
 					<option value="blåhat">
 					<option value="bredbladet timian">
-					<option value="ene">
+  					<!-- <option value="ene">  // This will conflict with "Almindelig ene" in the drop down check. -->
 					<option value="gul snerre">
 					<option value="havtorn">
 					<option value="hedelyng">
