@@ -36,7 +36,7 @@
 		<section id="container"><!-- #container -->
 			<section id="content"><!-- #content -->
 
-			    <h2 style="background-color:Tomato;">  Sorry - This doesn't work at the moment. </h2>
+			    <!--  <h2 style="background-color:Tomato;">  Sorry - This doesn't work at the moment. </h2> -->
 
 				<datalist id="plantdk">
 					<option value="agermåneslægten">
